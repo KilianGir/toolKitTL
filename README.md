@@ -6,7 +6,7 @@ Une page d'accueil personnelle, en un seul fichier HTML, pour regrouper et lance
 
 ## Aperçu
 
-`mes_outils.html` affiche tes liens sous forme de cartes regroupées par sections, avec un thème clair ou sombre. Un panneau de paramètres (icône ✦ en haut à droite) permet de tout personnaliser visuellement : titre, couleurs, sections, et liste d'outils — sans toucher au code.
+`index.html` affiche tes liens sous forme de cartes regroupées par sections, avec un thème clair ou sombre. Un panneau de paramètres (icône ✦ en haut à droite) permet de tout personnaliser visuellement : titre, couleurs, sections, et liste d'outils — sans toucher au code.
 
 La page n'utilise **aucun stockage de navigateur** (pas de `localStorage`). Les réglages que tu fais dans le panneau servent à générer un bloc de configuration JSON que tu colles ensuite dans le fichier pour les rendre permanents. C'est ce qui garde l'outil portable et versionnable proprement sur Git.
 
@@ -22,7 +22,7 @@ La page n'utilise **aucun stockage de navigateur** (pas de `localStorage`). Les 
 
 ## Installation sur GitHub Pages
 
-1. Crée un dépôt (par exemple `mon-portail`) et dépose `mes_outils.html` dedans. Tu peux le renommer `index.html` pour qu'il s'ouvre à la racine du site.
+1. Crée un dépôt (par exemple `mon-portail`) et dépose `index.html` dedans.
 2. Dans les **Settings** du dépôt → **Pages**, choisis la branche à publier (souvent `main`) et le dossier racine.
 3. Après quelques instants, ta page est en ligne à une adresse du type `https://TON_PSEUDO.github.io/mon-portail/`.
 4. Ouvre la page, clique sur ✦ et configure-la.
