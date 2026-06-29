@@ -435,9 +435,15 @@ function render(c){
       if(userField === '-'){
         // URL complète : le champ repo est utilisé tel quel
         href = (o.url||'#').trim() || '#';
+      } else if(userField === ''){
+        // (vide) : préfixe par la base globale
+        href = base + (o.url||'#');
+      } else if(/^https?:\/\//i.test(userField)){
+        // l'utilisateur a déjà saisi une base complète
+        href = userField + (o.url||'#');
       } else {
-        const b = userField ? userField : base;
-        href = b + (o.url||'#');
+        // username seul : construit https://<username>.github.io/<repo>
+        href = `https://${userField}.github.io/` + (o.url||'#');
       }
       a.href=href; a.target='_blank'; a.rel='noopener';
       a.innerHTML=`<span class="arrow">↗</span><h3></h3><p></p>`;
